@@ -36,6 +36,7 @@ public class CachePostReceiver extends BroadcastReceiver {
 						cursor.moveToPrevious();
 						
 						int nameSpaceIndex=cursor.getColumnIndex(DatabaseTableHelper.CachedRecords.Namespace);
+
 						int actionIndex=cursor.getColumnIndex(DatabaseTableHelper.CachedRecords.Action);
 						int urlIndex=cursor.getColumnIndex(DatabaseTableHelper.CachedRecords.Url);
 						int methodNameIndex=cursor.getColumnIndex(DatabaseTableHelper.CachedRecords.MethodName);
